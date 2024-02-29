@@ -1,0 +1,127 @@
+* {box-sizing:border-box;
+    background-color: lightgreen
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit), minmax(250px, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.articleHeader{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+padding: 20px;
+}
+.articleHeader h1{
+    text-align: center;
+}
+#social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.articleContent{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.add{
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.galleryContainer {
+    max-width: 100vh;
+    position: relative;
+    margin: auto;
+  }
+  .buttons{
+    border-radius: 16px;
+    padding: 10px;
+    border: darkgreen 2px solid;
+  }
+  .buttons:hover{
+    background-color: darkgreen;
+    color: white;
+  }
+  .picture{
+    min-height: 100px;
+    /* width: auto; */
+  }
+  #pic3{
+    min-height: 200px;
+  }
+@media{
+    #slideOne{
+        display: block;
+    }
+   .picture {
+    display: none;
+  } 
+}
+.galleryControls{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding: 20px;
+}
+/* Hamburger Menu Style */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+/* Hide regular nav menu */
+@media(max-width: 768px) {
+    .hamburger{
+        display: block; /* show hamburger menu*/
+    }
+    nav ul{
+        flex-direction: column;
+        display: none; /*Initially hide nav items*/
+    }
+    nav ul.active{
+        display: flex;
+    }
+}
+.title{
+    text-align: center;
+}
+
+
+
+
